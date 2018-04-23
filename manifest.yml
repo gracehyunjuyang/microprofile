@@ -2,8 +2,11 @@
 applications:
 - instances: 1
   timeout: 180
-  name: LibertyProject
+  name: microprofile
   buildpack: liberty-for-java
-  path: ./target/MyProject-1.0-SNAPSHOT.zip
+  path: ./target/microprofile-1.0-SNAPSHOT.zip
   memory: 512M
   random-route: true
+  env:
+    IBM_LIBERTY_BETA : true
+    JBP_CONFIG_LIBERTY : "version: +"

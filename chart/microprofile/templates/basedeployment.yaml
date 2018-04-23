@@ -25,7 +25,7 @@ spec:
             path: /microprofile/health
             port: 9080
           initialDelaySeconds: 20
-{{  end }}
+{{ end }}
         resources:
           requests:
             cpu: "{{ .Values.image.resources.requests.cpu }}"
